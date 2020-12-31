@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Survey Form page header-->
+    <div id="header-containter">
+        <div id="header-title">
+            <h1 id="title">Front End web developer needed</h1>
+        </div>
+        <div id="header-description">
+            <p id="description">Please fill the basic informations and experience in this form</p>
+        </div>
+        <div id="share">
+            <p>Share on</p>
+            <div id="social-links">
+                <div id="facebook">
+                    <a href=""><img src="https://www.flaticon.com/svg/static/icons/svg/20/20673.svg" alt="Share on facebook"></a>
+                </div>
+                <div id="twitter">
+                    <a href=""><img src="https://www.flaticon.com/svg/static/icons/svg/733/733635.svg" alt="Share on Twitter"></a>
+                </div>
+                <div id="whatsapp">
+                    <a href=""><img src="https://www.flaticon.com/svg/static/icons/svg/733/733641.svg" alt="Share on WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Sury form-->
+    <div id="form">
+        <form action="" id="survey-form">
+            <div id="questions">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+            </div>
+            <div id="questions">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div id="questions">
+                <label for="age" id="number-label">Age</label>
+                <input type="number" min="13" max="70" id="number" placeholder="Age" required>
+            </div>
+            <div id="questions">
+                <p>Where did you learn Front End Development?</p>
+                <select name="platform" id="dropdown" required>
+                <option disabled selected value>Select the Platform</option>
+                <option value="FreeCodeCamp">Free Code Camp</option>
+                <option value="Codecademy">Codecademy</option>
+                <option value="other-platform">Other</option>
+            </select>
+            </div>
+            <div id="questions">
+                <p>How many years do you have experience in front end development?</p>
+                    <label for="6-months" id="experience-div">
+                        <input type="radio" value="6-months" name="experience"> 6 Months
+                    </label>
+                    <label for="1-year" id="experience-div">
+                        <input type="radio" value="1-year" name="experience"> 1 year
+                    </label>
+                    <label for="2-years" id="experience-div">
+                        <input type="radio" value="2-years" name="experience"> 2 years
+                    </label>
+                    <label for="3-years" id="experience-div">
+                        <input type="radio" value="3-years" name="experience"> 3 Years
+                    </label>
+                    <label for="more-than-3-years" id="experience-div">
+                        <input type="radio" value="more-than-3-years" name="experience"> More than 3 Years
+                    </label>
+            </div>
+            <div id="questions">
+                <p>Which Front End libraries do you know?</p>
+                <label for="bootstrap" id="fl-list">
+                    <input type="checkbox" name="fl" value="bootstrap"> Bootstrap
+                </label>
+                <label for="jQuery" id="fl-list">
+                    <input type="checkbox" name="fl" value="jQuery"> jQuery
+                </label>
+                <label for="sass" id="fl-list">
+                    <input type="checkbox" name="fl" value="sass"> Sass
+                </label>
+                <label for="react" id="fl-list">
+                    <input type="checkbox" name="fl" value="react"> React
+                </label>
+                <label for="redux" id="fl-list">
+                    <input type="checkbox" name="fl" value="redux"> Redux
+                </label>
+            </div>
+            <div id="questions">
+                <p>Wrtie a comment (Optional)</p>
+                <textarea name="comments" id="comments" value="input-comment" placeholder="Write any comments here..." ></textarea>
+            </div>
+            <div id="questions">
+               <div id="submit-button">
+                <button type="submit" id="submit">Submit</button>
+               </div>
+            </div>
+        </form>
+    </div>
+
+<!--Footer-->
+
+<footer>
+    <div id="copyright">
+        <p>Web page designed by <a href="https://github.com/Mani-Fy" target="_blank"> Mani Kandan</a></p>
+    </div>
+</footer>
+    
+</body>
+</html>
